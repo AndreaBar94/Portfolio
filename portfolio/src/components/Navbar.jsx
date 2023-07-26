@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const MyNavbar = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary fixed-top">
+      <Navbar expand="lg" className="bg-white fixed-top">
         <Container className='justify-content-evenly'>
           <div>
             <Navbar.Brand href="#home">Welcome!</Navbar.Brand>
