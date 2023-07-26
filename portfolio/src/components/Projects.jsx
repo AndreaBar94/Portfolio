@@ -1,4 +1,4 @@
-import { Grid, Link } from '@mui/material'
+import { Card, CardContent, Grid, Link, Typography } from '@mui/material'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import boardGameBlog from '../assets/images/boardGameBlogScreen.png';
@@ -10,7 +10,7 @@ import calculatorScreen from '../assets/images/calculatorScreen.png';
 
 const Projects = () => {
   return (
-    <Container className='sectionBox'>
+    <Container className='sectionBox' id="projects-section">
       <Container className='text-start'>
         <h3>
           Projects
@@ -18,7 +18,7 @@ const Projects = () => {
         <hr />
       </Container>
 {/* ---------------------------------------------------------------------------------------------------- */}
-      <Grid container spacing={3} justifyContent="space-evenly" className='mt-5'>
+      <Grid container justifyContent="space-evenly" className='mt-5 projectBox'>
         <Grid item lg={4}>
           <img src={boardGameBlog} alt="project-img" className='img-fluid'/>
           <Link href="https://github.com/AndreaBar94/CapstoneProject" underline="none">
@@ -26,18 +26,27 @@ const Projects = () => {
           </Link>
         </Grid>
         <Grid item lg={4}>
-          <p>
-            This is my capstone project for Epicode's master course. It's a full-stack project, packed with React, Spring Boot, PostgreSQL, Google APIs for login and much more. Find more info in the readm file on this github repository!
-          </p>
+          <Card>
+            <CardContent>
+              <Typography>
+                This is my capstone project for Epicode's master course. It's a full-stack project, packed with React, Spring Boot, PostgreSQL, Google APIs for login and much more. Find more info in the readme file on this github repository!
+              </Typography>
+            </CardContent>
+          </Card>
+
         </Grid>
       </Grid>
 {/* ---------------------------------------------------------------------------------------------------- */}
 
-      <Grid container spacing={3} justifyContent="space-evenly" className='my-5'>
+      <Grid container justifyContent="space-evenly" className='my-5 projectBox'>
         <Grid item lg={4}>
-          <p>
+          <Card>
+            <CardContent>
+              <Typography>
             A Spotify clone made just with vanilla JS and SASS.
-          </p>
+                        </Typography>
+            </CardContent>
+          </Card>
         </Grid>
         <Grid item lg={4}>
         <img src={spotifyScreen} alt="project-img" className='img-fluid'/>
@@ -48,7 +57,7 @@ const Projects = () => {
       </Grid>
 {/* ---------------------------------------------------------------------------------------------------- */}
 
-      <Grid container spacing={3} justifyContent="space-evenly" className='my-2'>
+      <Grid container justifyContent="space-evenly" className='my-5 projectBox'>
         <Grid item lg={4}>
           <img src={netflixScreen} alt="project-img" className='img-fluid'/>
           <Link href="https://github.com/AndreaBar94/NetflixReact" underline="none">
@@ -56,18 +65,26 @@ const Projects = () => {
           </Link>
         </Grid>
         <Grid item lg={4}>
-          <p>
+          <Card>
+            <CardContent>
+              <Typography>
           My first project in React, this particular one was a refactor from a JS project.
-          </p>
+                        </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
 {/* ---------------------------------------------------------------------------------------------------- */}
 
-      <Grid container spacing={3} justifyContent="space-evenly" className='my-2'>
+      <Grid container justifyContent="space-evenly" className='my-5 projectBox'>
         <Grid item lg={4}>
-          <p>
+          <Card>
+            <CardContent>
+              <Typography>
             A clone made just with HTML and CSS, it was a fun project to enhance my CSS skills. Some basics JS touches for the hero section.
-          </p>
+                        </Typography>
+            </CardContent>
+          </Card>
         </Grid>
         <Grid item lg={4}>
         <img src={mediumScreen} alt="project-img" className='img-fluid'/>
@@ -78,7 +95,7 @@ const Projects = () => {
       </Grid>
 {/* ---------------------------------------------------------------------------------------------------- */}
 
-<Grid container spacing={3} justifyContent="space-evenly" className='my-2'>
+<Grid container justifyContent="space-evenly" className='my-5 projectBox'>
         <Grid item lg={4}>
           <img src={gestioneIncendiScreen} alt="project-img" className='img-fluid'/>
           <Link href="https://github.com/AndreaBar94/U4-W6-D5" underline="none">
@@ -86,19 +103,26 @@ const Projects = () => {
           </Link>
         </Grid>
         <Grid item lg={4}>
-          <p>
+          <Card>
+            <CardContent>
+              <Typography>
             Some practice in Spring Boot for Java Design Patterns.
-          </p>
+                        </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
-      {/* Aggiungi altri progetti qui */}
 {/* ---------------------------------------------------------------------------------------------------- */}
 
-<Grid container spacing={3} justifyContent="space-evenly" className='my-2'>
+<Grid container justifyContent="space-evenly" className='my-5 projectBox'>
         <Grid item lg={4}>
-          <p>
+          <Card>
+            <CardContent>
+              <Typography>
             My first project in JavaScript! Yes, i know, it has 'eval' method inside, but i was a newbie and so proud of my first project, so... enjoy!
-          </p>
+                        </Typography>
+            </CardContent>
+          </Card>
         </Grid>
         <Grid item lg={4}>
         <img src={calculatorScreen} alt="project-img" className='img-fluid'/>
