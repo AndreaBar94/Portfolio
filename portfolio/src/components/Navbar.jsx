@@ -1,31 +1,18 @@
+import { Container, Link } from '@mui/material';
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import MaterialUISwitch from './MaterialUISwitch';
 
-const MyNavbar = () => {
+const MyNavbar = ({checked, onChange}) => {
   return (
     <>
-      <Navbar expand="lg" className="bg-light shadow py-3 fixed-top">
-        <Container className='justify-content-evenly'>
-          <div>
-            <Navbar.Brand href="#home">Welcome!</Navbar.Brand>
-          </div>
-          <div>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#about-section">About</Nav.Link>
-                <Nav.Link href="#projects-section">Projects</Nav.Link>
-                <Nav.Link href="#skills-section">Skills</Nav.Link>
-                <Nav.Link href="#contacts-section">Contacts</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </div>
-          
-          
+      <Container fluid className="d-flex flex-column sticky-top sidebar p-5 justify-content-evenly">
+        <MaterialUISwitch checked={checked} onChange={onChange}/>
+                <h3>Welcome!</h3>
+                <Link className='navbar-link' underline="none" color="black" href="#about-section">About</Link>
+                <Link className='navbar-link' underline="none" color="black" href="#projects-section">Projects</Link>
+                <Link className='navbar-link' underline="none" color="black" href="#skills-section">Skills</Link>
+                <Link className='navbar-link' underline="none" color="black" href="#contacts-section">Contacts</Link>
         </Container>
-      </Navbar>
     </>
   )
 }

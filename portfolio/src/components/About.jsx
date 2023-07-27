@@ -1,12 +1,21 @@
 import React from 'react'
-import {Container} from 'react-bootstrap'
 import profileImg from '../assets/images/profileImg.jpeg';
-import { Card, CardContent, Grid, Typography } from '@mui/material';
+import { Card, CardContent, Container, Grid, Typography } from '@mui/material';
 
 
 const About = () => {
   return (
-    <Container className='sectionBox' id="about-section">
+    <Container 
+    className='sectionBox' 
+    id="about-section" 
+    data-aos="slide-right"
+    data-aos-offset="100"
+    data-aos-delay="10"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
       <Container className='text-start'>
         <h3 >
           About

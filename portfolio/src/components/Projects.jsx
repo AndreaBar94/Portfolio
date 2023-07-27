@@ -1,6 +1,5 @@
-import { Card, CardContent, Grid, Link, Typography } from '@mui/material'
+import { Card, CardContent, Container, Grid, Link, Typography } from '@mui/material'
 import React from 'react'
-import { Container } from 'react-bootstrap'
 import boardGameBlog from '../assets/images/boardGameBlogScreen.png';
 import mediumScreen from '../assets/images/mediumScreen.png';
 import netflixScreen from '../assets/images/netflixScreen.png';
@@ -10,7 +9,17 @@ import calculatorScreen from '../assets/images/calculatorScreen.png';
 
 const Projects = () => {
   return (
-    <Container className='sectionBox' id="projects-section">
+    <div 
+    className='sectionBox' 
+    id="projects-section"
+    data-aos="slide-right"
+    data-aos-offset="100"
+    data-aos-delay="20"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
       <Container className='text-start'>
         <h3>
           Projects
@@ -131,7 +140,7 @@ const Projects = () => {
           </Link>
         </Grid>
       </Grid>
-    </Container>
+    </div>
   );
 }
 
