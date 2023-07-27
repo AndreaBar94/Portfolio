@@ -17,7 +17,7 @@ const About = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-center">
       <Container className='text-start'>
-        <h3 >
+        <h3>
           About
         </h3>
         <hr />

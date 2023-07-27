@@ -7,6 +7,7 @@ body {
 .sectionBox {
 	margin-block: 2rem;
 	margin-inline: 20rem;
+	padding-top: 3rem;
 }
 
 .profileImage {
