@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Container, CssBaseline, Grid, ThemeProvider, createTheme } from '@mui/material';
+import { CssBaseline, Grid, ThemeProvider, createTheme } from '@mui/material';
 import { useState } from 'react';
 AOS.init({
   // Global settings:
