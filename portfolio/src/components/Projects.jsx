@@ -28,11 +28,11 @@ const Projects = () => {
       </Container>
 {/* ---------------------------------------------------------------------------------------------------- */}
       <Grid container className='mt-5 projectBox'>
-          <Link href="https://github.com/AndreaBar94/CapstoneProject" underline="none" className='d-flex justify-content-evenly'>
-            <Grid item lg={4} >
+          <Link href="https://github.com/AndreaBar94/CapstoneProject" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+            <Grid item xs={12} lg={4} >
               <img src={boardGameBlog} alt="project-img" className='img-fluid'/>
             </Grid>
-            <Grid item lg={4} >
+            <Grid item xs={12} lg={4} >
               <Card>
                 <CardContent>
                   <Typography>
@@ -48,7 +48,7 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
 
       <Grid container className='my-5 projectBox'>
-        <Link href="https://github.com/AndreaBar94/Build-Week-2-Spotify-Clone" underline="none" className='d-flex justify-content-evenly'>
+        <Link href="https://github.com/AndreaBar94/Build-Week-2-Spotify-Clone" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
           <Grid item lg={4}>
             <Card>
               <CardContent>
@@ -68,7 +68,7 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
 
       <Grid container className='my-5 projectBox'>
-          <Link href="https://github.com/AndreaBar94/NetflixReact" underline="none" className='d-flex justify-content-evenly'>
+          <Link href="https://github.com/AndreaBar94/NetflixReact" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
             <Grid item lg={4}>
               <img src={netflixScreen} alt="project-img" className='img-fluid'/>
             </Grid>
@@ -88,7 +88,7 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
 
       <Grid container className='my-5 projectBox'>
-        <Link href="https://github.com/AndreaBar94/UNIT2-S1-D5-Progetto" underline="none" className='d-flex justify-content-evenly'>
+        <Link href="https://github.com/AndreaBar94/UNIT2-S1-D5-Progetto" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
           <Grid item lg={4}>
             <Card>
               <CardContent>
@@ -108,7 +108,7 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
 
       <Grid container className='my-5 projectBox'>
-          <Link href="https://github.com/AndreaBar94/U4-W6-D5" underline="none" className='d-flex justify-content-evenly'>
+          <Link href="https://github.com/AndreaBar94/U4-W6-D5" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
             <Grid item lg={4}>
               <img src={gestioneIncendiScreen} alt="project-img" className='img-fluid'/>
             </Grid>
@@ -128,7 +128,7 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
 
 <Grid container className='my-5 projectBox'>
-        <Link href="https://github.com/AndreaBar94/UNIT2-S1-D5-Progetto" underline="none" className='d-flex justify-content-evenly'>
+        <Link href="https://github.com/AndreaBar94/UNIT2-S1-D5-Progetto" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
           <Grid item lg={4}>
             <Card>
               <CardContent>
