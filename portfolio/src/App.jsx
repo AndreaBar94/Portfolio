@@ -47,11 +47,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-        <Grid className='d-flex'>
-          <Grid item lg={4}>
+        <Grid>
+          <Grid item xs={12}  md={4}>
             <Navbar checked={darkMode} onChange={handleChange}/>
           </Grid>
-          <Grid item lg={8}>
+          <Grid item xs={12} md={8}>
             <About />
             <Projects />
             <Skills checked={darkMode}/>

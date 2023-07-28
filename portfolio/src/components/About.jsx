@@ -22,8 +22,8 @@ const About = () => {
         <hr />
       </Container>
       <Grid container spacing={3} marginTop={3} justifyContent="space-evenly">
-        <Grid item lg={7} className='d-flex align-items-center justify-content-center'>
-              <Typography fontSize={25}>
+        <Grid item xs={12} lg={7} className='d-md-flex align-items-center justify-content-center'>
+              <Typography>
                   <p className='typing-animation aboutMe2'>It's me, Andrea!</p>
                   <p className='typing-animation aboutMe1'>Web Developer</p>
                   <p className='typing-animation aboutMe2'>Passionated in games, music and sports;</p>
@@ -31,7 +31,7 @@ const About = () => {
                   <p className='typing-animation aboutMe3'>Based in Rome, Italy.</p>
               </Typography>
         </Grid>
-        <Grid item lg={4} sm={7}>
+        <Grid item xs={12} lg={4} >
           <img src={profileImg} alt="profile-img" className='img-fluid profileImage'/>
           <svg
             className='element'

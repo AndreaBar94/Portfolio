@@ -51,6 +51,7 @@ body {
 	background-color: black;
 	color: white;
 }
+
 .dark-mode-link:hover {
 	transform: translateY(-5px) scale(1.02);
 	transition: 300ms ease-in-out;
@@ -62,12 +63,14 @@ body {
 	background-color: white;
 	color: black;
 }
+
 @media screen and (max-width: 768px) {
 	.sectionBox {
 		margin-block: 2rem;
 		margin-inline: 2rem;
 	}
 }
+
 @keyframes typing {
 	from {
 		width: 0; /* Parte senza testo visibile */
@@ -90,18 +93,42 @@ body {
 	font-style: italic;
 	padding: 1rem;
 }
+
 .aboutMe2 {
 	font-size: 1.5rem;
 	font-weight: 400;
 	padding-inline: 0.6rem;
 	margin-inline: 1rem;
 }
+
 .aboutMe3 {
 	font-size: 1.5rem;
 	font-weight: 400;
 	color: rgba(48, 48, 48, 0.984);
 	padding-inline: 0.6rem;
 	margin-inline: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+	.aboutMe1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		font-style: italic;
+		margin-left: 0;
+	}
+
+	.aboutMe2 {
+		font-size: 1rem;
+		font-weight: 400;
+		margin-left: 0;
+	}
+
+	.aboutMe3 {
+		font-size: 1rem;
+		font-weight: 400;
+		color: rgba(48, 48, 48, 0.984);
+		margin-left: 0;
+	}
 }
 
 @keyframes rotateBg {
