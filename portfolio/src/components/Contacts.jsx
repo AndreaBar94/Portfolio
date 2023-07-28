@@ -32,7 +32,7 @@ const Contacts = () => {
       </Container>
       <Grid container justifyContent="space-evenly" className='my-5'>
         {contactData.map((contact, index) => (
-          <Grid item key={index}>
+          <Grid item key={index} className='text-center'>
             <a href={contact.url} target="_blank" rel="noopener noreferrer">
               {contact.icon}
             </a>

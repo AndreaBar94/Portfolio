@@ -10,6 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CssBaseline, Grid, ThemeProvider, createTheme } from '@mui/material';
 import { useState } from 'react';
+import Footer from './components/Footer';
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -47,14 +48,15 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
         <Grid className='d-flex'>
-          <Grid item lg={2}>
+          <Grid item lg={4}>
             <Navbar checked={darkMode} onChange={handleChange}/>
           </Grid>
           <Grid item lg={8}>
             <About />
             <Projects />
-            <Skills />
-            <Contacts />
+            <Skills checked={darkMode}/>
+            <Contacts checked={darkMode}/>
+            <Footer/>
           </Grid>
         </Grid>
     </ThemeProvider>

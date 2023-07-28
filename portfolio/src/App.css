@@ -11,6 +11,7 @@ body {
 }
 
 .profileImage {
+	position: relative;
 	width: 20rem;
 	border-radius: 100%;
 }
@@ -28,18 +29,27 @@ body {
 	transform: translateY(-5px) scale(1.02);
 	box-shadow: 13px 11px 12px 2px rgba(0, 0, 0, 0.81);
 }
-
-.sidebar {
-	background-color: rgb(218, 222, 225);
-	border: 1px solid rgba(128, 128, 128, 0.088);
-	height: 100vh;
+/* drawer light mode */
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+	padding: 3rem;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper a {
+	margin-block: 3rem;
+}
+/* drawer dark mode */
+.css-15b8vjn-MuiPaper-root-MuiDrawer-paper {
+	padding: 3rem;
+}
+.css-15b8vjn-MuiPaper-root-MuiDrawer-paper a {
+	margin-block: 3rem;
 }
 
-.navbar-link {
+.light-mode-link,
+.dark-mode-link {
 	transition: 300ms ease-in-out;
 }
 
-.navbar-link:hover {
+.light-mode-link:hover {
 	transform: translateY(-5px) scale(1.02);
 	transition: 300ms ease-in-out;
 	padding: 1.5rem;
@@ -49,4 +59,74 @@ body {
 	border-bottom-right-radius: 80px;
 	background-color: black;
 	color: white;
+}
+.dark-mode-link:hover {
+	transform: translateY(-5px) scale(1.02);
+	transition: 300ms ease-in-out;
+	padding: 1.5rem;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 80px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 80px;
+	background-color: white;
+	color: black;
+}
+
+@keyframes typing {
+	from {
+		width: 0; /* Parte senza testo visibile */
+	}
+	to {
+		width: 100%; /* Testo completamente visibile */
+	}
+}
+
+.typing-animation {
+	overflow: hidden; /* Nasconde il testo eccedente */
+	white-space: nowrap; /* Impedisce il wrap del testo */
+	animation: typing 1.75s steps(40, end); /* 3s di durata dell'animazione */
+	/* 40 passaggi per animare il testo lettera per lettera */
+}
+
+.aboutMe1 {
+	font-size: 4rem;
+	font-weight: 700;
+	font-style: italic;
+	padding: 1rem;
+}
+.aboutMe2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding-inline: 0.6rem;
+	margin-inline: 1rem;
+}
+.aboutMe3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(109, 107, 107, 0.984);
+	padding-inline: 0.6rem;
+	margin-inline: 1rem;
+}
+
+@keyframes rotateBg {
+	from {
+		perspective: 0px;
+		transform: rotate(0deg) translate(0px, 0px);
+	}
+	to {
+		perspective: 2300px;
+		transform: rotate(157deg) translate(100px, -90px);
+	}
+}
+
+.element {
+	position: absolute;
+	top: 1.5rem;
+	right: 10rem;
+	border-radius: 50px;
+	animation: rotateBg 1.75s linear;
+	transform: rotate(157deg) perspective(2300px) translate(100px, -90px);
+	transform-origin: 58% center;
+	background-color: blueviolet;
+	z-index: -1;
 }

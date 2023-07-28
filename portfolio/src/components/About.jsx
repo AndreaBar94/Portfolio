@@ -1,7 +1,6 @@
 import React from 'react'
 import profileImg from '../assets/images/profileImg.jpeg';
-import { Card, CardContent, Container, Grid, Typography } from '@mui/material';
-
+import { Container, Grid, Typography } from '@mui/material';
 
 const About = () => {
   return (
@@ -24,23 +23,25 @@ const About = () => {
       </Container>
       <Grid container spacing={3} marginTop={3} justifyContent="space-evenly">
         <Grid item lg={7} className='d-flex align-items-center justify-content-center'>
-          <Card>
-            <CardContent>
               <Typography fontSize={25}>
-                It's me, Andrea!
-                <ul className='text-start my-3'>
-                  <li>Web Developer</li>
-                  <li>Epicoder</li>
-                  <li>Passionated in games</li>
-                  <li>Never Stop Learner</li>
-                </ul>
+                  <p className='typing-animation aboutMe2'>It's me, Andrea!</p>
+                  <p className='typing-animation aboutMe1'>Web Developer</p>
+                  <p className='typing-animation aboutMe2'>Passionated in games, music and sports;</p>
+                  <p className='typing-animation aboutMe2'>Never Stop Learner!</p>
+                  <p className='typing-animation aboutMe3'>Based in Rome, Italy.</p>
               </Typography>
-            </CardContent>
-          </Card>
-            
         </Grid>
         <Grid item lg={4}>
           <img src={profileImg} alt="profile-img" className='img-fluid profileImage'/>
+          <svg
+            className='element'
+            width='300' // Larghezza dell'SVG in pixel
+            height='auto'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 100 100'
+          >
+            <circle cx='50' cy='50' r='50' fill='blueviolet' />
+          </svg>
         </Grid>
       </Grid>
     </Container>
