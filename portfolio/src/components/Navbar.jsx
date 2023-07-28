@@ -7,9 +7,10 @@ const MyNavbar = ({ checked, onChange }) => {
 
   return (
     <>
-      <Drawer variant={isLargeScreen ? 'permanent' : 'temporary'} anchor="left">
+      <Drawer variant='permanent' anchor={isLargeScreen ? 'left' : 'top'}>
+        <div className={isLargeScreen ? 'd-flex flex-column' : 'd-flex justify-content-evenly align-items-center my-3'}>
         <MaterialUISwitch checked={checked} onChange={onChange} />
-        <h3 className='mt-4'>Welcome!</h3>
+          {/* <h3 className={isLargeScreen ? 'mt-4' : ''}>Welcome!</h3> */}
         <Link
           className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
           underline="none"
@@ -35,13 +36,15 @@ const MyNavbar = ({ checked, onChange }) => {
           Skills
         </Link>
         <Link
-          className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
+          className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'} me-5`}
           underline="none"
           color="currentColor"
           href="#contacts-section"
         >
           Contacts
         </Link>
+        </div>
+        
       </Drawer>
     </>
   );

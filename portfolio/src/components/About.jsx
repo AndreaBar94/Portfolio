@@ -4,7 +4,7 @@ import { Container, Grid, Typography } from '@mui/material';
 
 const About = () => {
   return (
-    <Container 
+    <div
     className='sectionBox' 
     id="about-section" 
     data-aos="slide-right"
@@ -31,7 +31,7 @@ const About = () => {
                   <p className='typing-animation aboutMe3'>Based in Rome, Italy.</p>
               </Typography>
         </Grid>
-        <Grid item lg={4}>
+        <Grid item lg={4} sm={7}>
           <img src={profileImg} alt="profile-img" className='img-fluid profileImage'/>
           <svg
             className='element'
@@ -44,7 +44,7 @@ const About = () => {
           </svg>
         </Grid>
       </Grid>
-    </Container>
+    </div>
   )
 }
 

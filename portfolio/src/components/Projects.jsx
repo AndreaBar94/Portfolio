@@ -9,7 +9,7 @@ import calculatorScreen from '../assets/images/calculatorScreen.png';
 
 const Projects = () => {
   return (
-    <div 
+    <div
     className='sectionBox' 
     id="projects-section"
     data-aos="slide-right"
@@ -29,10 +29,10 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
       <Grid container className='mt-5 projectBox'>
           <Link href="https://github.com/AndreaBar94/CapstoneProject" underline="none" className='d-flex justify-content-evenly'>
-            <Grid item lg={4}>
+            <Grid item lg={4} >
               <img src={boardGameBlog} alt="project-img" className='img-fluid'/>
             </Grid>
-            <Grid item lg={4}>
+            <Grid item lg={4} >
               <Card>
                 <CardContent>
                   <Typography>

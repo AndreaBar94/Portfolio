@@ -6,7 +6,7 @@ body {
 
 .sectionBox {
 	margin-block: 2rem;
-	margin-inline: 20rem;
+	margin-inline: 15rem;
 	padding-top: 3rem;
 }
 
@@ -31,14 +31,18 @@ body {
 }
 /* drawer light mode */
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
-	padding: 3rem;
+	padding-block: 3rem;
+	padding-right: 1rem;
+	padding-left: 2rem;
 }
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper a {
 	margin-block: 3rem;
 }
 /* drawer dark mode */
 .css-15b8vjn-MuiPaper-root-MuiDrawer-paper {
-	padding: 3rem;
+	padding-block: 3rem;
+	padding-right: 1rem;
+	padding-left: 2rem;
 }
 .css-15b8vjn-MuiPaper-root-MuiDrawer-paper a {
 	margin-block: 3rem;
@@ -71,7 +75,12 @@ body {
 	background-color: white;
 	color: black;
 }
-
+@media screen and (max-width: 768px) {
+	.sectionBox {
+		margin-block: 2rem;
+		margin-inline: 2rem;
+	}
+}
 @keyframes typing {
 	from {
 		width: 0; /* Parte senza testo visibile */
@@ -115,7 +124,7 @@ body {
 	}
 	to {
 		perspective: 2300px;
-		transform: rotate(157deg) translate(100px, -90px);
+		transform: rotate(157deg) translate(10px, -120px);
 	}
 }
 
@@ -125,7 +134,7 @@ body {
 	right: 10rem;
 	border-radius: 50px;
 	animation: rotateBg 1.75s linear;
-	transform: rotate(157deg) perspective(2300px) translate(100px, -90px);
+	transform: rotate(157deg) perspective(2300px) translate(10px, -120px);
 	transform-origin: 58% center;
 	background-color: blueviolet;
 	z-index: -1;
