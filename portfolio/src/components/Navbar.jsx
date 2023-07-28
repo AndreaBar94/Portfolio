@@ -8,7 +8,7 @@ const MyNavbar = ({ checked, onChange }) => {
   return (
     <>
       <Drawer variant='permanent' anchor={isLargeScreen ? 'left' : 'top'} className='justify-content-between'>
-        <div className={isLargeScreen ? 'd-flex flex-column p-3' : 'd-flex justify-content-evenly align-items-center my-3'}>
+        <div className={isLargeScreen ? 'd-flex flex-column p-3 justify-content-evenly' : 'd-flex justify-content-evenly align-items-center my-3'}>
         <MaterialUISwitch checked={checked} onChange={onChange} />
         <Link
           className={`navbar-link my-5 ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
