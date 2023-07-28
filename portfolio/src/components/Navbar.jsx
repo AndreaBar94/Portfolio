@@ -7,12 +7,11 @@ const MyNavbar = ({ checked, onChange }) => {
 
   return (
     <>
-      <Drawer variant='permanent' anchor={isLargeScreen ? 'left' : 'top'}>
-        <div className={isLargeScreen ? 'd-flex flex-column' : 'd-flex justify-content-evenly align-items-center my-3'}>
+      <Drawer variant='permanent' anchor={isLargeScreen ? 'left' : 'top'} className='justify-content-between'>
+        <div className={isLargeScreen ? 'd-flex flex-column p-3' : 'd-flex justify-content-evenly align-items-center my-3'}>
         <MaterialUISwitch checked={checked} onChange={onChange} />
-          {/* <h3 className={isLargeScreen ? 'mt-4' : ''}>Welcome!</h3> */}
         <Link
-          className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
+          className={`navbar-link my-5 ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
           underline="none"
           color="currentColor"
           href="#about-section"
@@ -20,7 +19,7 @@ const MyNavbar = ({ checked, onChange }) => {
           About
         </Link>
         <Link
-          className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
+          className={`navbar-link my-5 ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
           underline="none"
           color="currentColor"
           href="#projects-section"
@@ -28,7 +27,7 @@ const MyNavbar = ({ checked, onChange }) => {
           Projects
         </Link>
         <Link
-          className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
+          className={`navbar-link my-5 ${checked ? 'dark-mode-link' : 'light-mode-link'}`}
           underline="none"
           color="currentColor"
           href="#skills-section"
@@ -36,7 +35,7 @@ const MyNavbar = ({ checked, onChange }) => {
           Skills
         </Link>
         <Link
-          className={`navbar-link ${checked ? 'dark-mode-link' : 'light-mode-link'} me-5`}
+          className={`navbar-link my-5 ${checked ? 'dark-mode-link' : 'light-mode-link'} me-5`}
           underline="none"
           color="currentColor"
           href="#contacts-section"
