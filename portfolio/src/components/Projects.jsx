@@ -128,7 +128,7 @@ const Projects = () => {
 {/* ---------------------------------------------------------------------------------------------------- */}
 
 <Grid container className='my-5 projectBox'>
-        <Link href="https://github.com/AndreaBar94/UNIT2-S1-D5-Progetto" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+        <Link href="https://github.com/AndreaBar94/fs0123-Andrea-Barocchi/tree/main/m1/s2/g5/progettoG5" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
           <Grid item lg={4}>
             <Card>
               <CardContent>
