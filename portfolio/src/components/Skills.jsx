@@ -6,6 +6,7 @@ import bootstrap from '../assets/icons/bootstrap.svg';
 import sass from '../assets/icons/sass.svg';
 import java from '../assets/icons/java.svg';
 import database from '../assets/icons/database.svg';
+import material from '../assets/icons/material.svg';
 
 const Skills = ({checked}) => {
   const skillsList = [
@@ -15,6 +16,7 @@ const Skills = ({checked}) => {
     { name: 'Sass', icon: <img src={sass} alt="Sass" width={48} height={48} /> },
     { name: 'Java', icon: <img src={java} alt="Java" width={48} height={48} /> },
     { name: 'PostgreSQL', icon: <img src={database} alt="PostgreSQL" width={48} height={48} /> },
+    { name: 'Material UI', icon: <img src={material} alt="MaterialUI" width={48} height={48} /> },
   ];
 
   return (
