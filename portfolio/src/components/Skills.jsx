@@ -37,9 +37,9 @@ const Skills = ({checked}) => {
         </h3>
         <hr />
       </Container>
-      <Grid container justifyContent="space-evenly" className='my-5' spacing={3}>
+      <Grid container justifyContent="space-evenly" className='my-5' spacing={4}>
         {skillsList.map((skill, index) => (
-          <Grid item xs={6} sm={4} md={3} lg={2} key={index} className='text-center'>
+          <Grid item xs={6} sm={4} md={3} lg={4} key={index} className='text-center'>
             <div>
               {skill.icon}
             </div>
