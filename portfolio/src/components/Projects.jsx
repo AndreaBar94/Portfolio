@@ -6,6 +6,7 @@ import netflixScreen from '../assets/images/netflixScreen.png';
 import spotifyScreen from '../assets/images/spotifyScreen.png';
 import gestioneIncendiScreen from '../assets/images/gestioneIncendiScreen.png';
 import calculatorScreen from '../assets/images/calculatorScreen.png';
+import morraScreen from '../assets/images/morraScreen.png';
 
 const Projects = () => {
   return (
@@ -144,6 +145,24 @@ const Projects = () => {
           <img src={calculatorScreen} alt="project-img" className='img-fluid'/>
           </Grid>
         </Link>
+      </Grid>
+{/* ---------------------------------------------------------------------------------------------------- */}
+
+<Grid container className='my-5 projectBox'>
+          <Link href="https://spr-scissors-paper-rock.vercel.app/" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+            <Grid item lg={4}>
+              <img src={morraScreen} alt="project-img" className='img-fluid'/>
+            </Grid>
+            <Grid item lg={4}>
+              <Card>
+                <CardContent>
+                  <Typography>
+                    Bored? Play some Scissors/Paper/Rock!
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Link>
       </Grid>
     </div>
   );
