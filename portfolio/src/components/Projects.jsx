@@ -7,6 +7,7 @@ import spotifyScreen from '../assets/images/spotifyScreen.png';
 import gestioneIncendiScreen from '../assets/images/gestioneIncendiScreen.png';
 import calculatorScreen from '../assets/images/calculatorScreen.png';
 import morraScreen from '../assets/images/morraScreen.png';
+import weatherApp from '../assets/images/weather-app.png'; 
 
 const Projects = () => {
   return (
@@ -28,18 +29,37 @@ const Projects = () => {
         <hr />
       </Container>
 {/* ---------------------------------------------------------------------------------------------------- */}
+      <Grid container className='my-5 projectBox'>
+        <Link href="https://github.com/AndreaBar94/CapstoneProject" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+          <Grid item lg={4}>
+            <Card>
+              <CardContent>
+                <Typography>
+                BoardGameBlog 
+                  <hr />
+                  This is my capstone project for Epicode's master course. It's a full-stack project, packed with React, Spring Boot, PostgreSQL, Google APIs for login and much more. Find more info in the readme file on this github repository!
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item lg={4}>
+          <img src={boardGameBlog} alt="project-img" className='img-fluid'/>
+          </Grid>
+        </Link>
+      </Grid>
+{/* ---------------------------------------------------------------------------------------------------- */}
       <Grid container className='mt-5 projectBox'>
-          <Link href="https://github.com/AndreaBar94/CapstoneProject" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+          <Link href="" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
             <Grid item xs={12} lg={4} >
-              <img src={boardGameBlog} alt="project-img" className='img-fluid'/>
+              <img src={weatherApp} alt="project-img" className='img-fluid'/>
             </Grid>
             <Grid item xs={12} lg={4} >
               <Card>
                 <CardContent>
                   <Typography>
-                    BoardGameBlog 
+                    iWeather
                     <hr />
-                    This is my capstone project for Epicode's master course. It's a full-stack project, packed with React, Spring Boot, PostgreSQL, Google APIs for login and much more. Find more info in the readme file on this github repository!
+                    Practice project, i have done this before during my bootcamp in Epicode and i was not happy about the results, so i decided to start a brand new project. It's a weather app, developed with React.js, React Redux and Openweathermap API. Enjoy!
                   </Typography>
                 </CardContent>
               </Card>
