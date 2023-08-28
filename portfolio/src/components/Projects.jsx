@@ -49,7 +49,7 @@ const Projects = () => {
       </Grid>
 {/* ---------------------------------------------------------------------------------------------------- */}
       <Grid container className='mt-5 projectBox'>
-          <Link href="" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+          <Link href="https://weather-app-lake-ten.vercel.app/" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
             <Grid item xs={12} lg={4} >
               <img src={weatherApp} alt="project-img" className='img-fluid'/>
             </Grid>
