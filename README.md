@@ -5,7 +5,7 @@ Welcome to my GitHub portfolio! Right here you cand find the code for my online 
 ## Screenshots
 
 Some preview:
-![Portfolio-image](portfolio/src/assets/images/portfolioScreen.jpg)
+![Portfolio-image](portfolio/src/assets/images/portfolioScreen.png)
 
 ## Links
 
