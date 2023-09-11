@@ -22,7 +22,7 @@ const Contacts = () => {
     data-aos-duration="800"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-once="false"
+    data-aos-once="true"
     data-aos-anchor-placement="top-bottom">
       <Container className='text-start'>
         <h3>

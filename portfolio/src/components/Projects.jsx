@@ -8,6 +8,7 @@ import gestioneIncendiScreen from '../assets/images/gestioneIncendiScreen.png';
 import calculatorScreen from '../assets/images/calculatorScreen.png';
 import morraScreen from '../assets/images/morraScreen.png';
 import weatherApp from '../assets/images/weather-app.png';
+import pokedexScreen from '../assets/images/pokedexScreen.png';
 
 const Projects = () => {
 
@@ -21,8 +22,9 @@ const Projects = () => {
     data-aos-duration="500"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center">
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center"
+    >
       <Container className='text-start mt-5'>
         <h3>
           Projects
@@ -206,6 +208,29 @@ const Projects = () => {
                     </Typography>
                   </CardContent>
                 </Card>
+              </Grid>
+            </Link>
+          </Grid>
+        </Badge>
+      </div>
+{/* ---------------------------------------------------------------------------------------------------- */}
+      <div className='mt-5'>
+        <Badge badgeContent="DEMO" color="success">
+          <Grid container className='projectBox'>
+            <Link href="https://pokedex-eight-blush.vercel.app/" underline="none" className='justify-content-evenly flex-xs-column d-lg-flex'>
+              <Grid item lg={4}>
+                <Card>
+                  <CardContent>
+                    <Typography>
+                      Pokédex
+                      <hr />
+                      Just a simple pokedex project to test the Poke APIs. I've got some fun from trying to replicate the pokedex look by manipulating some divs in the CSS file. It works both on mobile and desktop version, contact me if you find any issues!
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item lg={4}>
+              <img src={pokedexScreen} alt="project-img" className='img-fluid'/>
               </Grid>
             </Link>
           </Grid>

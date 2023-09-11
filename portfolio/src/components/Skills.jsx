@@ -29,7 +29,7 @@ const Skills = ({checked}) => {
     data-aos-duration="500"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-once="false"
+    data-aos-once="true"
     data-aos-anchor-placement="bottom-bottom">
       <Container className='text-start'>
         <h3>
